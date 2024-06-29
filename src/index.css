@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(255, 255, 255);
+  background-color: white;
+
+  
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 1000px) {
+  .hide-below-1000 {
+    display: none;
+  }
+}
+
+.Page1 {
+  background-image: url(./assets/drive-download-20240615T053340Z-001/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.Page2{
+  display: flex;
+  background-color: white;
+  background-blend-mode: darken;
+}
+#Aboutpara{
+  transition: all .5s;
+  padding: 30px;
+}
+#Aboutpara:hover{ 
+  box-shadow: 2px 4px 10px 2px black;
+  scale: 0.95;
+}
+#Services{
+  background-image: url(./assets/drive-download-20240615T053340Z-001/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Headroom{
+  background-image: url(./assets/drive-download-20240615T053340Z-001/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#scroll::-webkit-scrollbar{
+
+  height: 5px;
+
+}
+#scroll::-webkit-scrollbar-thumb{
+  background: rgb(199,163,106);
+  border-radius: 100px;
+}
+#scroll2::-webkit-scrollbar-track{
+  background-color: black ;
+}
+
+body {
+  display: flex;
+  user-select: none;
+  
+  
+}
+button{
+  transition: all 1s;
+}
+button:hover {
+  scale: 0.95;
+  background-color: white;
+  color: rgb(199,163,106);
+  border: dashed;
+}
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+ 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#slider:hover{
+  animation-play-state: paused;
+}
+#slider{
+  animation: 30s slide infinite linear;
+  transition: all 2s;
+}
+.navlinks{
+  position: relative;
+}
+.navlinks:after{
+  content: '';
+  bottom: -2px;
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(199,163,106);
+  transition: 0.5s;
+}
+.navlinks:hover::after{
+    width: 100%;
+}
